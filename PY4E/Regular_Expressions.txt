@@ -1,0 +1,16 @@
+^               Matches the BEGINNING of a line
+$               Matches the END of a line
+.               Matches ANY character
+\s              Matches WHITESPACE
+\S              Matches any NON-WHITESPACE character
+*               REPEATS a character 0 or more times
+*?              REPEATS a character 0 or more times (non-greedy)
++               REPEATS a character 1 or more times
++?              REPEATS a character 1 or more times (non-greedy)
+[aeiou]         Matches a single character in the listed SET
+[^XYZ]          Matches a single character NOT IN the listed SET
+[a-z0-9]        The set of characters can include a RANGE
+(               Indicates where string EXTRACTION is to START
+)               Indicates where string EXTRACTION is to END
+
+\               Indicates that the character is an active character. (For eg., to search for $10.00, we write: re.findall('\$[0-9.]+', x)  )
